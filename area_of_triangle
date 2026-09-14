@@ -1,0 +1,16 @@
+// c program to obtain the sides of a triangle and compute its area
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+printf("enter the value of the three sides: ");
+float a,b,c,area;
+scanf("%f%f%f", &a, &b, &c);
+float semi;
+semi = a+b+c/2;
+area = semi*(semi - a)*(semi - b)*(semi - c);
+float root;
+root = sqrt(area);
+printf("area of triangle is %f\n", root);
+return 0;
+}
